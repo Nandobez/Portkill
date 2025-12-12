@@ -1,0 +1,293 @@
+/* PortKill Theme - Gruvbox Dark */
+
+/* Gruvbox Color Variables */
+$primary: #d3869b;
+$primary-light: #d3869b;
+$primary-dark: #b16286;
+
+$success: #b8bb26;
+$warning: #fabd2f;
+$error: #fb4934;
+$info: #83a598;
+
+$orange: #fe8019;
+$aqua: #8ec07c;
+$purple: #d3869b;
+
+$surface: #282828;
+$surface-light: #3c3836;
+$surface-lighter: #504945;
+$surface-dark: #1d2021;
+
+$text: #ebdbb2;
+$text-muted: #a89984;
+$text-dim: #665c54;
+
+$border: #504945;
+$border-focus: #d3869b;
+
+/* App-wide styles */
+Screen {
+    width: 100%;
+    background: $surface;
+}
+
+/* Header styling */
+Header {
+    background: $surface-light;
+    color: $text;
+    text-style: bold;
+    height: 1;
+}
+
+Header > HeaderTitle {
+    color: $orange;
+    text-style: bold;
+}
+
+/* Footer styling */
+Footer {
+    background: $surface-light;
+    color: $text-muted;
+}
+
+Footer > FooterKey {
+    background: $surface-lighter;
+    color: $aqua;
+}
+
+Footer > FooterKey > .footer-key--key {
+    background: $orange;
+    color: $surface;
+}
+
+/* DataTable styling */
+DataTable {
+    width: 100%;
+    background: $surface;
+    scrollbar-background: $surface-light;
+    scrollbar-color: $surface-lighter;
+    scrollbar-color-hover: $orange;
+    scrollbar-color-active: $warning;
+}
+
+DataTable > .datatable--header {
+    background: $surface-light;
+    color: $aqua;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: $surface-lighter;
+    color: $text;
+}
+
+DataTable > .datatable--hover {
+    background: $surface-light;
+}
+
+DataTable:focus > .datatable--cursor {
+    background: $orange;
+    color: $surface;
+}
+
+/* Switch styling */
+Switch {
+    background: $surface-lighter;
+}
+
+Switch:focus {
+    background: $surface-lighter;
+}
+
+Switch.-on {
+    background: $success;
+}
+
+Switch.-on > .switch--slider {
+    color: $surface;
+}
+
+/* Select styling */
+Select {
+    background: $surface-light;
+    border: solid $border;
+}
+
+Select:focus {
+    border: solid $orange;
+}
+
+Select > SelectCurrent {
+    background: $surface-light;
+    color: $text-muted;
+}
+
+Select > SelectOverlay {
+    background: $surface-light;
+    border: solid $orange;
+}
+
+/* Input styling */
+Input {
+    background: $surface-light;
+    color: $text;
+}
+
+Input:focus {
+    background: $surface-lighter;
+}
+
+/* Input in FilterBar - no borders */
+FilterBar Input {
+    border: none;
+    height: 1;
+}
+
+FilterBar Input:focus {
+    border: none;
+}
+
+/* Switch in FilterBar */
+FilterBar Switch {
+    height: 1;
+    border: none;
+    background: $surface-lighter;
+}
+
+FilterBar Switch.-on {
+    background: $success;
+}
+
+/* Select in FilterBar */
+FilterBar Select {
+    height: 1;
+    border: none;
+    background: $surface-lighter;
+}
+
+FilterBar Select:focus {
+    border: none;
+}
+
+FilterBar SelectCurrent {
+    height: 1;
+    border: none;
+    background: $surface-lighter;
+}
+
+FilterBar SelectOverlay {
+    background: $surface-light;
+    border: solid $orange;
+}
+
+Input > .input--placeholder {
+    color: $text-dim;
+}
+
+/* Button styling */
+Button {
+    background: $orange;
+    color: $surface;
+    border: none;
+}
+
+Button:hover {
+    background: $warning;
+}
+
+Button:focus {
+    background: $warning;
+    text-style: bold;
+}
+
+Button.-primary {
+    background: $orange;
+}
+
+Button.-success {
+    background: $success;
+}
+
+Button.-warning {
+    background: $warning;
+}
+
+Button.-error {
+    background: $error;
+}
+
+/* Static/Label styling */
+Static {
+    color: $text;
+}
+
+/* Notifications */
+Toast {
+    background: $surface-light;
+    border: solid $orange;
+    color: $text;
+}
+
+Toast.-information {
+    border: solid $info;
+}
+
+Toast.-success {
+    border: solid $success;
+}
+
+Toast.-warning {
+    border: solid $warning;
+}
+
+Toast.-error {
+    border: solid $error;
+}
+
+/* Panel styling */
+.panel {
+    background: $surface-light;
+    border: solid $border;
+    padding: 1;
+}
+
+.panel:focus-within {
+    border: solid $orange;
+}
+
+/* Modal/Dialog styling */
+ModalScreen {
+    align: center middle;
+    background: rgba(40, 40, 40, 0.8);
+}
+
+#dialog {
+    background: $surface-light;
+    border: solid $orange;
+    padding: 1 2;
+    width: 60;
+    height: auto;
+}
+
+#dialog-title {
+    text-align: center;
+    text-style: bold;
+    color: $orange;
+    padding-bottom: 1;
+}
+
+#dialog-body {
+    text-align: center;
+    color: $text;
+    padding-bottom: 1;
+}
+
+#dialog-buttons {
+    align: center middle;
+    height: auto;
+}
+
+#dialog-buttons Button {
+    margin: 0 1;
+}
